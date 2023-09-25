@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Forecast', type: :request do
   context 'GET /forecast' do
-    scenario 'returns forecast for a city' do 
+    scenario 'returns forecast for a city', :vcr do 
       location = 'cincinnati,oh'
       get '/api/v0/forecast', params: { location: location }
 

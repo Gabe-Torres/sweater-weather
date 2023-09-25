@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Members Facade' do
-  context 'instance methods' do
+  context 'instance methods', :vcr do
     scenario '#get_forecast' do
       forcast = ForecastFacade.get_forecast('cincinnati,oh')
 
