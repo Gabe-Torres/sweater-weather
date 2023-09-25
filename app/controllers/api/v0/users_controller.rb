@@ -1,6 +1,6 @@
 class Api::V0::UsersController < ApplicationController
   def create
-    require 'pry'; binding.pry
+    # require 'pry'; binding.pry
     user = User.create!(user_params)
     if user.save
       render json: UsersSerializer.new(user), status: :created
