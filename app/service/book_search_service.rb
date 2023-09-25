@@ -10,7 +10,7 @@ class BookSearchService
   end
 
   def self.book_search(query, quantity)
-    require 'pry'; binding.pry
+    # require 'pry'; binding.pry
     get_url("/search.json?q=#{query}&limit=#{quantity}")
   end
 end
