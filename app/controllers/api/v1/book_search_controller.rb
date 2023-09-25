@@ -1,7 +1,9 @@
 class Api::V1::BookSearchController < ApplicationController
   def index
     require 'pry'; binding.pry
-    # render json: BookSearchFacade.book_search(params[:location], params[:quantity])
-    render json: BookSearchSerializer.new(BookSearchFacade.book_search(params[:location], params[:quantity]))
+    books = BookSearchFacade.book_search(params[:location], params[:quantity])
+    forcast = ForecastFacade.get_forecast(params[:location]).current_weather
+    render json: BookSearchSerializer.new(params[:location], forcast, books)
   end
 end
+

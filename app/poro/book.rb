@@ -1,5 +1,5 @@
 class Book
-  attr_reader :id, :type, :books
+  attr_reader :type, :books, :id
 
   def initialize(book_data)
     @id = nil
