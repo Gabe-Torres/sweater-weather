@@ -61,12 +61,12 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
-  # VCR.configure do |config|
-  #   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
-  #   config.hook_into :webmock
-  #   config.configure_rspec_metadata!
-  #   config.default_cassette_options = { re_record_interval: 20.days, record: :new_episodes }
-  # end
+  VCR.configure do |config|
+    config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+    config.hook_into :webmock
+    config.configure_rspec_metadata!
+    config.default_cassette_options = { re_record_interval: 20.days, record: :new_episodes }
+  end
 end
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|

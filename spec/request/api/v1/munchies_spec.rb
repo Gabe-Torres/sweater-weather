@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Yelp API", type: :request do
   context "GET /api/v1/munchies" do
-    scenario "returns a list of restaurants" do
+    scenario "returns a list of restaurants", :vcr do
       destination = "denver,co" 
       food = "italian"
 

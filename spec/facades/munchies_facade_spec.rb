@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Munchies facade' do
+RSpec.describe 'Munchies facade', :vcr do
   context 'instance methods' do
     scenario 'get_restaurants' do
       resturant = MunchiesFacade.get_food('denver,co', 'italian')
