@@ -8,6 +8,9 @@ Rails.application.routes.draw do
     namespace :v0 do
       resources :forecast, only: [:index] 
       post '/registration', to: 'users#create'
+      resources :sessions do
+        post '/login', to: 'sessions#create'
+      end
     end
   end
 end
