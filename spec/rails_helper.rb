@@ -68,3 +68,9 @@ RSpec.configure do |config|
     config.default_cassette_options = { re_record_interval: 20.days, record: :new_episodes }
   end
 end
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end
