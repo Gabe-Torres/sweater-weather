@@ -412,4 +412,62 @@ http_interactions:
         22:00","temp_f":72.5,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-26
         23:00","temp_f":70.8,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}}]}]}}'
   recorded_at: Tue, 26 Sep 2023 17:14:39 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=1&location=denver,co&term=italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '427'
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-7d948dbbb8-8c8sr; site=public_api_v3
+      X-Zipkin-Id:
+      - 07c44f320c3e4955
+      Server:
+      - envoy
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-127-196-useast1aprod
+      X-Extlb:
+      - 10-65-127-196-useast1aprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 26 Sep 2023 17:40:41 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-iah17222-IAH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "''Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx''
+        does not match ''^(?i)Bearer [A-Za-z0-9\\\\-\\\\_]{128}$''", "field": "Authorization",
+        "instance": "Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx"}}'
+  recorded_at: Tue, 26 Sep 2023 17:40:41 GMT
 recorded_with: VCR 6.2.0

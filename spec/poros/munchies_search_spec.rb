@@ -15,11 +15,11 @@ RSpec.describe MunchiesSearch do
       search = MunchiesSearch.new('denver,co', forecast, 'restaurant')
 
     expect(search).to be_a(MunchiesSearch)
-    expect(search.destination).to eq('denver,co')
+    expect(search.destination_city).to eq('denver,co')
     expect(search.forecast).to eq(expected_forecast)
     expect(search.restaurant).to eq('restaurant')
     expect(search.id).to eq(nil)
-    expect(search).to have_attributes(destination: 'denver,co', forecast: expected_forecast, restaurant: 'restaurant', id: nil)
+    expect(search).to have_attributes(destination_city: 'denver,co', forecast: expected_forecast, restaurant: 'restaurant', id: nil)
     expect(search.forecast).to be_a(Hash)
     expect(search.restaurant).to be_a(String)
     expect(search.restaurant).to eq('restaurant')

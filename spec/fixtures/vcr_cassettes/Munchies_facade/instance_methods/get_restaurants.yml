@@ -273,4 +273,178 @@ http_interactions:
         1917.9808284366875}], "total": 1300, "region": {"center": {"longitude": -104.97024536132812,
         "latitude": 39.73552421220229}}}'
   recorded_at: Tue, 26 Sep 2023 17:14:38 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=1&location=denver,co&term=italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '427'
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-7d948dbbb8-6xdv6; site=public_api_v3
+      X-Zipkin-Id:
+      - b6c27e431a28f2bd
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-114-242-useast1aprod
+      X-Extlb:
+      - 10-65-114-242-useast1aprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 26 Sep 2023 17:40:01 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dfw-kdfw8210084-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "''Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx''
+        does not match ''^(?i)Bearer [A-Za-z0-9\\\\-\\\\_]{128}$''", "field": "Authorization",
+        "instance": "Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx"}}'
+  recorded_at: Tue, 26 Sep 2023 17:40:01 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=1&location=denver,co&term=italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '427'
+      Content-Type:
+      - application/json
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-7d948dbbb8-gjfff; site=public_api_v3
+      X-Zipkin-Id:
+      - e01f019514bf33a3
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-127-196-useast1aprod
+      X-Extlb:
+      - 10-65-127-196-useast1aprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 26 Sep 2023 17:41:42 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dfw-kdfw8210104-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "''Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx''
+        does not match ''^(?i)Bearer [A-Za-z0-9\\\\-\\\\_]{128}$''", "field": "Authorization",
+        "instance": "Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx"}}'
+  recorded_at: Tue, 26 Sep 2023 17:41:42 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=denver,co&term=italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '427'
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-7d948dbbb8-gjfff; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - a9a062340a6b2da8
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-65-70-useast1aprod
+      X-Extlb:
+      - 10-65-65-70-useast1aprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 26 Sep 2023 17:43:01 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dfw-kdfw8210135-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "''Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx''
+        does not match ''^(?i)Bearer [A-Za-z0-9\\\\-\\\\_]{128}$''", "field": "Authorization",
+        "instance": "Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx"}}'
+  recorded_at: Tue, 26 Sep 2023 17:43:01 GMT
 recorded_with: VCR 6.2.0

@@ -1,9 +1,9 @@
 class MunchiesSearch
-  attr_reader :id, :destination, :forecast, :restaurant
+  attr_reader :id, :destination_city, :forecast, :restaurant
 
   def initialize(destination, forecast, restaurant)
     @id = nil
-    @destination = destination
+    @destination_city = destination
     @forecast = format_forecast(forecast)
     @restaurant = restaurant
   end
