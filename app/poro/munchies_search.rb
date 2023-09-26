@@ -5,7 +5,7 @@ class MunchiesSearch
     @id = nil
     @destination = destination
     @forecast = format_forecast(forecast)
-    @restaurants = restaurant
+    @restaurant = restaurant
   end
 
   def format_forecast(forecast)
