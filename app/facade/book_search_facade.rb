@@ -6,6 +6,6 @@ class BookSearchFacade
     books = book_data.map do |book_data|
       Book.new(book_data)
     end
-    { num_found: num_found, books: books }
+    # { num_found: num_found, books: books }
   end
 end
