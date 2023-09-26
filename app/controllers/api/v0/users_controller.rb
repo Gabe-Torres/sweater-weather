@@ -1,12 +1,9 @@
 class Api::V0::UsersController < ApplicationController
   def create
-    # require 'pry'; binding.pry
-    user = User.create!(user_params)
-    if user.save
-      render json: UsersSerializer.new(user), status: :created
-    else
-      render json: Error.new(error: user.errors.full_messages.to_sentence, status: 400), status: :bad_request
-    end
+    require 'pry'; binding.pry
+    render json: UsersSerializer.new(User.create!(user_params)), status: :created
+  rescue ActiveRecord::RecordInvalid => e
+    render json: { error: e.message }, status: :bad_request
   end
 
   private
