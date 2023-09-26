@@ -9,5 +9,8 @@ Rails.application.routes.draw do
       resources :forecast, only: [:index] 
       post '/registration', to: 'users#create'
     end
+      namespace :v1 do
+        resources :munchies, only: [:index]
+      end
   end
 end
