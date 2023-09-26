@@ -2,7 +2,7 @@ class MunchiesService
 
   def self.conn
     conn = Faraday.new(url: "https://api.yelp.com/v3") do |faraday|
-      faraday.headers["Authorization"] = "Bearer #{ENV['YELP_API_KEY']}"
+      faraday.headers["Authorization"] = "Bearer #{Rails.application.credentials.yelp[:key]}"
     end
   end
 
