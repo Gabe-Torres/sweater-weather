@@ -7,8 +7,5 @@ class MunchiesFacade
     restaurant = resturant_data.map do |restaurant|
       Restaurant.new(restaurant)
     end
-    # food_data[:businesses].map do |restaurant|
-    #   Restaurant.new(restaurant)
-    # end
   end
 end

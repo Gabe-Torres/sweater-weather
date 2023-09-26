@@ -7,13 +7,11 @@ class MunchiesService
   end
 
   def self.get_url(url)
-    # binding.pry
     response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.get_restaurants(location, food)
-    # require 'pry'; binding.pry
     get_url("businesses/search?location=#{location}&term=#{food}")
   end
 end
