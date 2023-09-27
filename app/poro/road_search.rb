@@ -4,18 +4,20 @@ class RoadSearch
     @id = nil
     @start_city = trip_details.origin
     @end_city = trip_details.destination
-    @travel_time = trip_details.travel_time
-    @weather_at_eta = format_forcast(forecast)
+    @travel_time = trip_details.travel_time.nil? ? "impossible" : trip_details.travel_time
+    @weather_at_eta = format_forcast(forecast).nil? ? {} : format_forcast(forecast)
     @date_time = format_time(trip_details.travel_time)
   end
 
   def format_forcast(forecast)
+    unless @travel_time == "impossible"
     weather = forecast.first
     { 
       date_time: format_time(travel_time),
       temperature: weather[:temperature],
       conditions: weather[:conditions],
     }
+    end
   end
   
   def round_time(travel_time)
@@ -27,6 +29,7 @@ class RoadSearch
   end
 
   def format_time(travel_time)
+    unless @travel_time == "impossible"
     hours, minutes, seconds = travel_time.split(':').map(&:to_i)
 
     travel_time_seconds = (hours * 3600) + (minutes * 60) + seconds
@@ -36,5 +39,6 @@ class RoadSearch
     arrival_time = current_time + travel_time_seconds
 
     final_time = arrival_time.strftime("%Y-%m-%d %I:%M:%S %p")
+    end
   end
 end
