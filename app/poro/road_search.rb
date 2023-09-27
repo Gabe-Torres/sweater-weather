@@ -1,19 +1,20 @@
 class RoadSearch
-  attr_reader :id, :start_city, :end_city, :travel_time, :forecast, :date_time
+  attr_reader :id, :start_city, :end_city, :travel_time, :weather_at_eta
   def initialize(trip_details, forecast)
     @id = nil
     @start_city = trip_details.origin
     @end_city = trip_details.destination
     @travel_time = trip_details.travel_time
-    @forecast = format_forcast(forecast)
-    @date_time = date_time(trip_details.travel_time)
+    @weather_at_eta = format_forcast(forecast)
+    @date_time = format_time(trip_details.travel_time)
   end
 
   def format_forcast(forecast)
     weather = forecast.first
     { 
-      conditions: weather[:conditions],
+      date_time: format_time(travel_time),
       temperature: weather[:temperature],
+      conditions: weather[:conditions],
     }
   end
   
@@ -25,7 +26,7 @@ class RoadSearch
     new_time = round_time.strftime("%H:00:00")
   end
 
-  def date_time(travel_time)
+  def format_time(travel_time)
     hours, minutes, seconds = travel_time.split(':').map(&:to_i)
 
     travel_time_seconds = (hours * 3600) + (minutes * 60) + seconds
