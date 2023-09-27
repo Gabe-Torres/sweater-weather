@@ -11,7 +11,6 @@ class RoadTripService
   end
 
   def self.get_travel_time(origin, destination)
-    # binding.pry
     data = get_url("/directions/v2/route?from=#{origin}&to=#{destination}")
     data[:route][:formattedTime]
   end
