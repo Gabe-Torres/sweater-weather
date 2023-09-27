@@ -38,7 +38,6 @@ RSpec.describe 'Road Search' do
       current_time = Time.new(2023, 9, 27, 12, 0, 0)
       allow(Time).to receive(:now).and_return(current_time)
       trip_details = RoadTripFacade.get_road_trip(params[:origin], params[:destination])
-      # forecast = [{ date_time: current_time, temperature: 75.0, conditions: 'Sunny' }]
       origin = 'New York, NY'
       destination = 'London, UK'
       travel_time = nil
