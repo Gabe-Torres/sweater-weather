@@ -14,6 +14,7 @@ RSpec.describe 'Registration API', type: :request do
 
       expect(response).to have_http_status(:created)
       expect(response.content_type).to match(a_string_including('application/json'))
+      expect(response).to be_successful
 
       response_body = JSON.parse(response.body)
       expect(response_body['data']['type']).to eq('users')

@@ -9,9 +9,9 @@ class Api::V0::RoadTripController < ApplicationController
   end
 
   private 
-    def verify_user
-      user = User.find_by(api_key: params[:api_key])
-    end
+  def verify_user
+    user = User.find_by(api_key: params[:api_key])
+  end
 
   def trip_details
     trip_details = RoadTripFacade.get_road_trip(params[:origin], params[:destination])

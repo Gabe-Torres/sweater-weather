@@ -20,13 +20,13 @@ class RoadSearch
     end
   end
   
-  def round_time(travel_time)
-    time = Time.parse(travel_time)
+  # def round_time(travel_time)
+  #   time = Time.parse(travel_time)
 
-    round_time = Time.at((time.to_f / 3600).round * 3600)
+  #   round_time = Time.at((time.to_f / 3600).round * 3600)
 
-    new_time = round_time.strftime("%H:00:00")
-  end
+  #   new_time = round_time.strftime("%H:00:00")
+  # end
 
   def format_time(travel_time)
     unless @travel_time == "impossible"
