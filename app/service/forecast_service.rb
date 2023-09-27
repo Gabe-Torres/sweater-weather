@@ -31,4 +31,10 @@ class ForecastService
     latlng = get_location(location)
     get_url2("/v1/forecast.json?q=#{latlng[:lat]},#{latlng[:lng]}")
   end
+
+  def self.get_forcast_for_eta(location, eta)
+    eta_time = eta.strftime("%Y-%m-%dT%H:%M:%S")
+    latlng = get_location(location)
+    get_url2("/v1/forecast.json?q=#{latlng[:lat]},#{latlng[:lng]}&dt=#{eta_time}")
+  end
 end

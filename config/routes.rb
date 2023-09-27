@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       resources :sessions do
         post '/login', to: 'sessions#create'
       end
+      resources :road_trip, only: [:create]
     end
   end
 end
