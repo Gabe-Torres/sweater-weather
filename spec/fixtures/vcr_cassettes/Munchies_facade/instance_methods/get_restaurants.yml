@@ -1,0 +1,450 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=denver,co&term=italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 1FYSJipl7LMr39P2wt6kUU2NV0WTLjSIOKOWiK740NcsUK6fZgZ0ouPVqumCZCKBuZ7xWyy0mEngrfphFbQgBMETdJlXAMwypcePo9-VA8GVCpBd1eT9QSiXcXiHZHYx
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Remaining:
+      - '4969.0'
+      X-Routing-Service:
+      - routing-main--useast1-7d948dbbb8-jdk9b; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2023-09-27T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - 675faf8cd5c54215
+      Ratelimit-Dailylimit:
+      - '5000.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-76-231-useast1aprod
+      X-Extlb:
+      - 10-65-76-231-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 26 Sep 2023 17:14:38 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dfw-kdfw8210091-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "i8VF3q7dTszCcigJSMcJzQ", "alias": "angelo-s-taverna-denver",
+        "name": "Angelo\u2019s Taverna", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/xsp2nVkNCx7ZfvSZ4MDgXg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/angelo-s-taverna-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 1630, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "bars", "title": "Bars"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.725523, "longitude": -104.979224},
+        "transactions": ["pickup", "restaurant_reservation", "delivery"], "price":
+        "$$", "location": {"address1": "620 E 6th Ave", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO",
+        "display_address": ["620 E 6th Ave", "Denver, CO 80203"]}, "phone": "+13037443366",
+        "display_phone": "(303) 744-3366", "distance": 1351.3929919123793}, {"id":
+        "jVOAZe9L3Kwx9Ze-UhT3_w", "alias": "odyssey-italian-restaurant-denver", "name":
+        "Odyssey Italian Restaurant", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/X5Mh_wJK5CVcEvLeF8UsRQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/odyssey-italian-restaurant-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 1293, "categories": [{"alias": "sicilian", "title": "Sicilian"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "pastashops", "title":
+        "Pasta Shops"}], "rating": 4.5, "coordinates": {"latitude": 39.7257806690032,
+        "longitude": -104.979706093254}, "transactions": ["pickup", "delivery"], "price":
+        "$$", "location": {"address1": "603 E 6th Ave", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO",
+        "display_address": ["603 E 6th Ave", "Denver, CO 80203"]}, "phone": "+13033180102",
+        "display_phone": "(303) 318-0102", "distance": 1352.1700039997434}, {"id":
+        "l3L_AzpF6svQ-Jr2npEEyQ", "alias": "bella-italia-denver-2", "name": "Bella
+        Italia", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/s_8CAUKjCLmI2Ht1Q7Gaiw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/bella-italia-denver-2?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 179, "categories": [{"alias": "pizza", "title": "Pizza"},
+        {"alias": "italian", "title": "Italian"}, {"alias": "bars", "title": "Bars"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.708942, "longitude": -104.928213},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "5075 Leetsdale Dr", "address2": null, "address3": "", "city": "Denver", "zip_code":
+        "80246", "country": "US", "state": "CO", "display_address": ["5075 Leetsdale
+        Dr", "Denver, CO 80246"]}, "phone": "+13033883211", "display_phone": "(303)
+        388-3211", "distance": 4662.31962463196}, {"id": "Y-c9rFdGYXlT-A1ndoCTrg",
+        "alias": "tavernetta-denver", "name": "Tavernetta", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/geY9Y_aK3RebBaDL1_ymvw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tavernetta-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 620, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.75302254234153, "longitude":
+        -105.00196807402816}, "transactions": ["pickup", "delivery"], "price": "$$$",
+        "location": {"address1": "1889 16th St", "address2": null, "address3": "",
+        "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO", "display_address":
+        ["1889 16th St", "Denver, CO 80202"]}, "phone": "+17206051889", "display_phone":
+        "(720) 605-1889", "distance": 3337.975146787094}, {"id": "Y8Np2emyG1l8yyg3jWovAQ",
+        "alias": "jovaninas-broken-italian-denver", "name": "Jovanina''s Broken Italian",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Xh7WPy3ZFqJ9vV-q21xbCw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/jovaninas-broken-italian-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 367, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.7498466483866, "longitude":
+        -104.99979224056}, "transactions": ["pickup", "delivery"], "location": {"address1":
+        "1520 Blake St", "address2": "", "address3": null, "city": "Denver", "zip_code":
+        "80202", "country": "US", "state": "CO", "display_address": ["1520 Blake St",
+        "Denver, CO 80202"]}, "phone": "+17205417721", "display_phone": "(720) 541-7721",
+        "distance": 2986.3583971429894}, {"id": "QAMR-ujpiN4nuggIDMBXaA", "alias":
+        "difrancos-denver-2", "name": "DiFranco''s", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/6AUea-v8mh2UMod5cydODA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/difrancos-denver-2?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 577, "categories": [{"alias": "delis", "title": "Delis"},
+        {"alias": "italian", "title": "Italian"}, {"alias": "mediterranean", "title":
+        "Mediterranean"}], "rating": 4.5, "coordinates": {"latitude": 39.731024, "longitude":
+        -104.9863458}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
+        {"address1": "955 Lincoln St", "address2": "Unit D", "address3": "", "city":
+        "Denver", "zip_code": "80203", "country": "US", "state": "CO", "display_address":
+        ["955 Lincoln St", "Unit D", "Denver, CO 80203"]}, "phone": "+17202531244",
+        "display_phone": "(720) 253-1244", "distance": 1464.8973054461128}, {"id":
+        "pnY1m8aBusUCqgD1rUcLyw", "alias": "panzano-denver", "name": "Panzano", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/y_UF2ikw0RBizRzDuNU3NQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/panzano-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 1193, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "bars", "title": "Bars"}, {"alias": "breakfast_brunch", "title":
+        "Breakfast & Brunch"}], "rating": 4.5, "coordinates": {"latitude": 39.747833,
+        "longitude": -104.992822}, "transactions": ["pickup", "delivery"], "price":
+        "$$$", "location": {"address1": "909 17th St", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO",
+        "display_address": ["909 17th St", "Denver, CO 80202"]}, "phone": "+13032963525",
+        "display_phone": "(303) 296-3525", "distance": 2366.3196999156726}, {"id":
+        "iM8ijTk7rpzcwGAIm7thwg", "alias": "gattara-denver-2", "name": "Gattara",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Piml665coy_NDCsLBcaWFw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/gattara-denver-2?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 107, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}, {"alias": "cocktailbars", "title": "Cocktail
+        Bars"}], "rating": 4.0, "coordinates": {"latitude": 39.744387, "longitude":
+        -104.983221}, "transactions": ["pickup", "restaurant_reservation", "delivery"],
+        "location": {"address1": "1776 Grant St", "address2": "", "address3": "",
+        "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO", "display_address":
+        ["1776 Grant St", "Denver, CO 80203"]}, "phone": "+13033187272", "display_phone":
+        "(303) 318-7272", "distance": 1487.6724476186143}, {"id": "1WALpDdP5FXQpZS10e2MOg",
+        "alias": "pesto-denver-denver", "name": "Pesto - Denver", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/bmwAxirJEi2IuK34KqE2Og/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pesto-denver-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 20, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.7696095, "longitude": -104.9766261},
+        "transactions": ["pickup", "delivery"], "location": {"address1": "3501 Wazee
+        St", "address2": null, "address3": null, "city": "Denver", "zip_code": "80216",
+        "country": "US", "state": "CO", "display_address": ["3501 Wazee St", "Denver,
+        CO 80216"]}, "phone": "+17202954425", "display_phone": "(720) 295-4425", "distance":
+        3829.1585239623723}, {"id": "wPU-0BiY5vz2ARPBBzAXrA", "alias": "gaetanos-denver",
+        "name": "Gaetano''s", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/MKfcdBAXN8GF7SuzqAcl9Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/gaetanos-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 860, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "cocktailbars", "title": "Cocktail Bars"}, {"alias": "wine_bars",
+        "title": "Wine Bars"}], "rating": 4.0, "coordinates": {"latitude": 39.769109,
+        "longitude": -105.01102963}, "transactions": ["delivery"], "price": "$$",
+        "location": {"address1": "3760 Tejon St", "address2": "", "address3": "",
+        "city": "Denver", "zip_code": "80211", "country": "US", "state": "CO", "display_address":
+        ["3760 Tejon St", "Denver, CO 80211"]}, "phone": "+13034559852", "display_phone":
+        "(303) 455-9852", "distance": 5109.048928158419}, {"id": "MvS8MEgkEvhA9mv-y5Wtow",
+        "alias": "dio-mio-denver-2", "name": "Dio Mio", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/lH4BJwKmgRVPAkyq59oQlA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dio-mio-denver-2?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 341, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "bars", "title": "Bars"}, {"alias": "tapasmallplates", "title":
+        "Tapas/Small Plates"}], "rating": 4.0, "coordinates": {"latitude": 39.76479,
+        "longitude": -104.97678}, "transactions": ["pickup", "delivery"], "price":
+        "$$", "location": {"address1": "3264 Larimer St", "address2": null, "address3":
+        "", "city": "Denver", "zip_code": "80205", "country": "US", "state": "CO",
+        "display_address": ["3264 Larimer St", "Denver, CO 80205"]}, "phone": "+13035621965",
+        "display_phone": "(303) 562-1965", "distance": 3300.4374482436483}, {"id":
+        "xmdOOeP1TqQQYlHOG4Y2Rw", "alias": "cucina-bella-denver", "name": "Cucina
+        Bella", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/RySUPqW61UaH0w2pLvkwhw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/cucina-bella-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 72, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.708214, "longitude": -104.876554},
+        "transactions": ["pickup", "delivery"], "location": {"address1": "9660 E Alameda
+        Ave", "address2": "Ste 104", "address3": null, "city": "Denver", "zip_code":
+        "80247", "country": "US", "state": "CO", "display_address": ["9660 E Alameda
+        Ave", "Ste 104", "Denver, CO 80247"]}, "phone": "+17205508957", "display_phone":
+        "(720) 550-8957", "distance": 8597.522504673043}, {"id": "jx5kzkP_9zwh9BW0WVPAWw",
+        "alias": "osteria-marco-denver", "name": "Osteria Marco", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/t7w0b78AmDIf0x0pdBW3Ig/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/osteria-marco-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 1783, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}, {"alias": "newamerican", "title": "American
+        (New)"}], "rating": 4.0, "coordinates": {"latitude": 39.74819, "longitude":
+        -104.99897}, "transactions": ["pickup", "delivery"], "price": "$$$", "location":
+        {"address1": "1453 Larimer St", "address2": "", "address3": "", "city": "Denver",
+        "zip_code": "80202", "country": "US", "state": "CO", "display_address": ["1453
+        Larimer St", "Denver, CO 80202"]}, "phone": "+13035345855", "display_phone":
+        "(303) 534-5855", "distance": 2841.245105651464}, {"id": "7UWt_282vPsGQPtrquRR9Q",
+        "alias": "shells-and-sauce-denver", "name": "Shells and Sauce", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/Cmew37l4Pe4wBn9GdCiQbQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/shells-and-sauce-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 1000, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "bars", "title": "Bars"}, {"alias": "salad", "title": "Salad"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.735020342619, "longitude": -104.95613854543},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "2600 E 12th Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80206", "country": "US", "state": "CO", "display_address": ["2600 E 12th
+        Ave", "Denver, CO 80206"]}, "phone": "+13033772091", "display_phone": "(303)
+        377-2091", "distance": 1207.5670962222423}, {"id": "IqxTaWdhqi396H6-8Jq8mA",
+        "alias": "north-italia-denver-denver", "name": "North Italia", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/hrU8tatVZqdfcpWvM528dA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/north-italia-denver-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 990, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}, {"alias": "cocktailbars", "title": "Cocktail
+        Bars"}], "rating": 4.0, "coordinates": {"latitude": 39.719172, "longitude":
+        -104.95567}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "190 Clayton Ln", "address2": null, "address3": "", "city": "Denver", "zip_code":
+        "80206", "country": "US", "state": "CO", "display_address": ["190 Clayton
+        Ln", "Denver, CO 80206"]}, "phone": "+17209417700", "display_phone": "(720)
+        941-7700", "distance": 2204.505778450444}, {"id": "6eJYt41wjqhGiA2s71pP2w",
+        "alias": "parisi-denver", "name": "Parisi", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ihNYWN26tmUVjh107YZnkw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/parisi-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 631, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}], "rating": 4.0, "coordinates": {"latitude":
+        39.77678, "longitude": -105.04427}, "transactions": ["delivery"], "price":
+        "$$", "location": {"address1": "4401 Tennyson St", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80212", "country": "US", "state": "CO",
+        "display_address": ["4401 Tennyson St", "Denver, CO 80212"]}, "phone": "+13035610234",
+        "display_phone": "(303) 561-0234", "distance": 7819.861682465207}, {"id":
+        "1LgAyefoqOBRdK0AN0eSGQ", "alias": "spuntino-denver", "name": "Spuntino",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/sJVJROGDyYM1SZJhUC4gAg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/spuntino-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 447, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "indpak", "title": "Indian"}], "rating": 4.5, "coordinates": {"latitude":
+        39.76211, "longitude": -105.01995}, "transactions": ["delivery"], "price":
+        "$$", "location": {"address1": "2639 W 32nd Ave", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80211", "country": "US", "state": "CO",
+        "display_address": ["2639 W 32nd Ave", "Denver, CO 80211"]}, "phone": "+13034330949",
+        "display_phone": "(303) 433-0949", "distance": 5187.600612812958}, {"id":
+        "O0naNbBI7QmrJrCS5u7vYA", "alias": "benzina-denver-2", "name": "Benzina",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/UE8Z4zqQe2ZEHd8-MkQSlg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/benzina-denver-2?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 107, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}, {"alias": "gluten_free", "title": "Gluten-Free"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.74046113597567, "longitude":
+        -104.9313793}, "transactions": [], "price": "$$$", "location": {"address1":
+        "4839 E Colfax Ave", "address2": "", "address3": null, "city": "Denver", "zip_code":
+        "80220", "country": "US", "state": "CO", "display_address": ["4839 E Colfax
+        Ave", "Denver, CO 80220"]}, "phone": "+13033992352", "display_phone": "(303)
+        399-2352", "distance": 3368.321014284191}, {"id": "6ThdJligZWCUCKjnbKgKFQ",
+        "alias": "quality-italian-denver", "name": "Quality Italian", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/r9mAmsyrAfaUe15dUKLpQA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/quality-italian-denver?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 570, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "newamerican", "title": "American (New)"}, {"alias": "steak", "title":
+        "Steakhouses"}], "rating": 4.0, "coordinates": {"latitude": 39.72034414253415,
+        "longitude": -104.9573377}, "transactions": ["delivery"], "price": "$$$",
+        "location": {"address1": "241 Columbine St", "address2": "", "address3": null,
+        "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address":
+        ["241 Columbine St", "Denver, CO 80206"]}, "phone": "+13035328888", "display_phone":
+        "(303) 532-8888", "distance": 2016.8370514163819}, {"id": "zMoAJk3NxEf8flfaMIMZ4A",
+        "alias": "maggianos-little-italy-denver-2", "name": "Maggiano''s Little Italy",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/jIWmRMEj80Z7CwsSimPkrQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/maggianos-little-italy-denver-2?adjust_creative=ETugO8RebFjUsSDbO-lOMg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=ETugO8RebFjUsSDbO-lOMg",
+        "review_count": 864, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "bars", "title": "Bars"}], "rating": 4.0, "coordinates": {"latitude":
+        39.7431283703769, "longitude": -104.990379308065}, "transactions": ["pickup",
+        "delivery"], "price": "$$", "location": {"address1": "500 16th St", "address2":
+        "Ste 150", "address3": "", "city": "Denver", "zip_code": "80202", "country":
+        "US", "state": "CO", "display_address": ["500 16th St", "Ste 150", "Denver,
+        CO 80202"]}, "phone": "+13032607707", "display_phone": "(303) 260-7707", "distance":
+        1917.9808284366875}], "total": 1300, "region": {"center": {"longitude": -104.97024536132812,
+        "latitude": 39.73552421220229}}}'
+  recorded_at: Tue, 26 Sep 2023 17:14:38 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=1&location=denver,co&term=italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '427'
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-7d948dbbb8-6xdv6; site=public_api_v3
+      X-Zipkin-Id:
+      - b6c27e431a28f2bd
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-114-242-useast1aprod
+      X-Extlb:
+      - 10-65-114-242-useast1aprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 26 Sep 2023 17:40:01 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dfw-kdfw8210084-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "''Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx''
+        does not match ''^(?i)Bearer [A-Za-z0-9\\\\-\\\\_]{128}$''", "field": "Authorization",
+        "instance": "Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx"}}'
+  recorded_at: Tue, 26 Sep 2023 17:40:01 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=1&location=denver,co&term=italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '427'
+      Content-Type:
+      - application/json
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-7d948dbbb8-gjfff; site=public_api_v3
+      X-Zipkin-Id:
+      - e01f019514bf33a3
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-127-196-useast1aprod
+      X-Extlb:
+      - 10-65-127-196-useast1aprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 26 Sep 2023 17:41:42 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dfw-kdfw8210104-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "''Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx''
+        does not match ''^(?i)Bearer [A-Za-z0-9\\\\-\\\\_]{128}$''", "field": "Authorization",
+        "instance": "Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx"}}'
+  recorded_at: Tue, 26 Sep 2023 17:41:42 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=denver,co&term=italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '427'
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-7d948dbbb8-gjfff; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - a9a062340a6b2da8
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-65-70-useast1aprod
+      X-Extlb:
+      - 10-65-65-70-useast1aprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 26 Sep 2023 17:43:01 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dfw-kdfw8210135-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "''Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx''
+        does not match ''^(?i)Bearer [A-Za-z0-9\\\\-\\\\_]{128}$''", "field": "Authorization",
+        "instance": "Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx"}}'
+  recorded_at: Tue, 26 Sep 2023 17:43:01 GMT
+recorded_with: VCR 6.2.0

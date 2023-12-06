@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=denver,co&term=chinese
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '427'
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - eb5db0a07a0c6bc5
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-7d948dbbb8-j7tjl; site=public_api_v3
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-173-201-useast1bprod
+      X-Extlb:
+      - 10-65-173-201-useast1bprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 26 Sep 2023 17:53:50 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dfw-kdfw8210104-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "''Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx''
+        does not match ''^(?i)Bearer [A-Za-z0-9\\\\-\\\\_]{128}$''", "field": "Authorization",
+        "instance": "Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx"}}'
+  recorded_at: Tue, 26 Sep 2023 17:53:50 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=denver,co&term=chinese
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '427'
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - 79df4d4746d7f882
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-7d948dbbb8-c2bsz; site=public_api_v3
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-127-196-useast1aprod
+      X-Extlb:
+      - 10-65-127-196-useast1aprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 26 Sep 2023 17:59:31 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dfw-kdfw8210071-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "''Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx''
+        does not match ''^(?i)Bearer [A-Za-z0-9\\\\-\\\\_]{128}$''", "field": "Authorization",
+        "instance": "Bearer PWnCUHTUPdSiggsf9AGEOTYE]KWgav46c7tEUVNROigQE8VDECIQPsMk5cmbdYGrTUr8]N81LQ78W79akhHe20VT30sd]F7VtvnglfRULrKnf2EcTwdG7pOP-OSZXYx"}}'
+  recorded_at: Tue, 26 Sep 2023 17:59:31 GMT
+recorded_with: VCR 6.2.0

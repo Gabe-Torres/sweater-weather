@@ -13,5 +13,8 @@ Rails.application.routes.draw do
       end
       resources :road_trip, only: [:create]
     end
+      namespace :v1 do
+        resources :munchies, only: [:index]
+      end
   end
 end
