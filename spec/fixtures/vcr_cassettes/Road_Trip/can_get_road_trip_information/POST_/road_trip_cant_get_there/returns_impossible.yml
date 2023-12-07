@@ -1,0 +1,490 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=Honolulu,HI&key=eWINVlXkjFa5lBZ84UgWvvl55NevygCR&to=London,UK
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:51:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '278'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14508'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14508'
+      Ratelimit-Reset:
+      - '1901337'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 143b9ad0-5ce9-11ee-b395-71ea4db9c60d
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"116-iBjgnQxNGqjY6sVCYaem2XJ/c3Q"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MiwibWVzc2FnZSI6IiJ9fSwiaW5mbyI6eyJzdGF0dXNjb2RlIjo0MDIsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbIldlIGFyZSB1bmFibGUgdG8gcm91dGUgd2l0aCB0aGUgZ2l2ZW4gbG9jYXRpb25zLiJdfX0=
+  recorded_at: Wed, 27 Sep 2023 03:51:03 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=eWINVlXkjFa5lBZ84UgWvvl55NevygCR&location=London,UK
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:51:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '794'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14510'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14510'
+      Ratelimit-Reset:
+      - '1901337'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 146e4390-5ce9-11ee-8808-076b4196d2c9
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"31a-/yGk/u5RFaZ/f+vbV5FGlpm/C9I"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJMb25kb24sVUsifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiTG9uZG9uIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkxvbmRvbiIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkVORyIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiR0IiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6NTEuNTA2NDMsImxuZyI6LTAuMTI3MTl9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NTEuNTA2NDMsImxuZyI6LTAuMTI3MTl9LCJtYXBVcmwiOiIifV19XX0=
+  recorded_at: Wed, 27 Sep 2023 03:51:03 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/forecast.json?key=284d42cad1bb4fe193a230417232309&q=51.50643,-0.12719
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:51:03 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-1029
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '567412368'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '09/27/2023 03:51:03'
+      Cdn-Edgestorageid:
+      - '1067'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 231a15b210d38ed87261681d1c6a6b57
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"London","region":"City of London, Greater London","country":"United
+        Kingdom","lat":51.51,"lon":-0.13,"tz_id":"Europe/London","localtime_epoch":1695786661,"localtime":"2023-09-27
+        4:51"},"current":{"last_updated":"2023-09-27 04:45","temp_f":57.2,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/night/122.png"},"humidity":94,"feelslike_f":57.1,"vis_miles":6.0,"uv":1.0},"forecast":{"forecastday":[{"date":"2023-09-27","day":{"maxtemp_f":65.9,"mintemp_f":55.5,"totalsnow_cm":0.0,"condition":{"text":"Patchy
+        rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},"astro":{"sunrise":"06:54
+        AM","sunset":"06:48 PM"},"hour":[{"time":"2023-09-27 00:00","temp_f":58.9,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        01:00","temp_f":58.6,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        02:00","temp_f":58.2,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        03:00","temp_f":58.2,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        04:00","temp_f":57.2,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/night/122.png"}},{"time":"2023-09-27
+        05:00","temp_f":58.2,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/119.png"}},{"time":"2023-09-27
+        06:00","temp_f":58.0,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        07:00","temp_f":58.7,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-27
+        08:00","temp_f":60.6,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-27
+        09:00","temp_f":62.2,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/day/122.png"}},{"time":"2023-09-27
+        10:00","temp_f":62.7,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        11:00","temp_f":63.2,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        12:00","temp_f":62.9,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/day/266.png"}},{"time":"2023-09-27
+        13:00","temp_f":64.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        14:00","temp_f":65.7,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        15:00","temp_f":65.9,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        16:00","temp_f":65.1,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        17:00","temp_f":64.3,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/day/266.png"}},{"time":"2023-09-27
+        18:00","temp_f":63.2,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        19:00","temp_f":60.2,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-27
+        20:00","temp_f":58.1,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        21:00","temp_f":56.9,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        22:00","temp_f":56.0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-27
+        23:00","temp_f":55.5,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}}]}]}}'
+  recorded_at: Wed, 27 Sep 2023 03:51:03 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=Honolulu,HI&key=eWINVlXkjFa5lBZ84UgWvvl55NevygCR&to=London,UK
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:55:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '278'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14504'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14504'
+      Ratelimit-Reset:
+      - '1901100'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - a1cf8050-5ce9-11ee-ab9e-a105447bb6a9
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"116-iBjgnQxNGqjY6sVCYaem2XJ/c3Q"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MiwibWVzc2FnZSI6IiJ9fSwiaW5mbyI6eyJzdGF0dXNjb2RlIjo0MDIsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbIldlIGFyZSB1bmFibGUgdG8gcm91dGUgd2l0aCB0aGUgZ2l2ZW4gbG9jYXRpb25zLiJdfX0=
+  recorded_at: Wed, 27 Sep 2023 03:55:00 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=eWINVlXkjFa5lBZ84UgWvvl55NevygCR&location=London,UK
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:55:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '794'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14503'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14503'
+      Ratelimit-Reset:
+      - '1901099'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - a200a270-5ce9-11ee-8808-076b4196d2c9
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"31a-/yGk/u5RFaZ/f+vbV5FGlpm/C9I"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJMb25kb24sVUsifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiTG9uZG9uIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkxvbmRvbiIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkVORyIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiR0IiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6NTEuNTA2NDMsImxuZyI6LTAuMTI3MTl9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NTEuNTA2NDMsImxuZyI6LTAuMTI3MTl9LCJtYXBVcmwiOiIifV19XX0=
+  recorded_at: Wed, 27 Sep 2023 03:55:01 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/forecast.json?key=284d42cad1bb4fe193a230417232309&q=51.50643,-0.12719
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:55:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-1070
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '639440152'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '09/27/2023 03:55:01'
+      Cdn-Edgestorageid:
+      - '1067'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - f5fa0b71b2afe072e79a6f402c182378
+      Cdn-Cache:
+      - EXPIRED
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"London","region":"City of London, Greater London","country":"United
+        Kingdom","lat":51.51,"lon":-0.13,"tz_id":"Europe/London","localtime_epoch":1695786898,"localtime":"2023-09-27
+        4:54"},"current":{"last_updated":"2023-09-27 04:45","temp_f":55.4,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"},"humidity":100,"feelslike_f":55.1,"vis_miles":6.0,"uv":1.0},"forecast":{"forecastday":[{"date":"2023-09-27","day":{"maxtemp_f":65.9,"mintemp_f":55.5,"totalsnow_cm":0.0,"condition":{"text":"Patchy
+        rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},"astro":{"sunrise":"06:54
+        AM","sunset":"06:48 PM"},"hour":[{"time":"2023-09-27 00:00","temp_f":58.9,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        01:00","temp_f":58.6,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        02:00","temp_f":58.2,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        03:00","temp_f":58.2,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        04:00","temp_f":55.4,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        05:00","temp_f":58.2,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/119.png"}},{"time":"2023-09-27
+        06:00","temp_f":58.0,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        07:00","temp_f":58.7,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-27
+        08:00","temp_f":60.6,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-27
+        09:00","temp_f":62.2,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/day/122.png"}},{"time":"2023-09-27
+        10:00","temp_f":62.7,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        11:00","temp_f":63.2,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        12:00","temp_f":62.9,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/day/266.png"}},{"time":"2023-09-27
+        13:00","temp_f":64.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        14:00","temp_f":65.7,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        15:00","temp_f":65.9,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        16:00","temp_f":65.1,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        17:00","temp_f":64.3,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/day/266.png"}},{"time":"2023-09-27
+        18:00","temp_f":63.2,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        19:00","temp_f":60.2,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-27
+        20:00","temp_f":58.1,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        21:00","temp_f":56.9,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-27
+        22:00","temp_f":56.0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-27
+        23:00","temp_f":55.5,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}}]}]}}'
+  recorded_at: Wed, 27 Sep 2023 03:55:01 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=New%20York,NY&key=eWINVlXkjFa5lBZ84UgWvvl55NevygCR&to=London,UK
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:59:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '278'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14500'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14500'
+      Ratelimit-Reset:
+      - '1900820'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 487f77c0-5cea-11ee-b395-71ea4db9c60d
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"116-iBjgnQxNGqjY6sVCYaem2XJ/c3Q"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MiwibWVzc2FnZSI6IiJ9fSwiaW5mbyI6eyJzdGF0dXNjb2RlIjo0MDIsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbIldlIGFyZSB1bmFibGUgdG8gcm91dGUgd2l0aCB0aGUgZ2l2ZW4gbG9jYXRpb25zLiJdfX0=
+  recorded_at: Wed, 27 Sep 2023 03:59:40 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=New%20York,NY&key=eWINVlXkjFa5lBZ84UgWvvl55NevygCR&to=London,UK
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:59:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '278'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14497'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14497'
+      Ratelimit-Reset:
+      - '1900815'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 4b733c50-5cea-11ee-ab9e-a105447bb6a9
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"116-iBjgnQxNGqjY6sVCYaem2XJ/c3Q"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MiwibWVzc2FnZSI6IiJ9fSwiaW5mbyI6eyJzdGF0dXNjb2RlIjo0MDIsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbIldlIGFyZSB1bmFibGUgdG8gcm91dGUgd2l0aCB0aGUgZ2l2ZW4gbG9jYXRpb25zLiJdfX0=
+  recorded_at: Wed, 27 Sep 2023 03:59:45 GMT
+recorded_with: VCR 6.2.0

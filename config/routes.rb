@@ -7,9 +7,15 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v0 do
       resources :forecast, only: [:index] 
+      post '/registration', to: 'users#create'
+      resources :sessions do
+        post '/login', to: 'sessions#create'
+      end
+      resources :road_trip, only: [:create]
     end
     namespace :v1 do
       resources :book_search, only: [:index]
-    end
+      resources :munchies, only: [:index]
+      end
   end
 end
